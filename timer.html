@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StopWatch</title>
+    <style>
+      #top {
+        height: 100vh;
+        width: 100vw;
+      }
+      #a {
+        background-color: aqua;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        margin: 5px;
+      }
+      #b {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(228, 228, 206);
+        display: flex;
+
+      }
+      #tama{
+        display: flex;
+        line-height: 0%;
+      }
+      #tama2 {
+        display: flex;
+        line-height: 0%; 
+      }
+      .sample {
+        background-color: aqua;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        margin: 5px;
+      }
+      #kazu {
+        width: 10px;
+      }
+      /* #c {
+        height: 100%;
+        width: 50%;
+        background-color: rgb(240, 219, 187);
+      } */
+    </style>
+</head>
+<body>
+
+    <div id="timer">00:00</div>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <button id="reset">reset</button>
+    <input type="radio" name="check" id="c1" checked>
+    <input type="radio" name="check" id="c2">
+    <!-- <input type="tel" id="point"> -->
+    <div id="top">
+      <div id="tama">
+        <p class="sample">☆</p>
+        <p>= 10秒</p>
+        <p class="sample">★</p>
+        <p>= 60秒</p>
+        <p class="sample">☆</p>
+        <p>=<span id="kazu"></span></p>
+        <p class="sample">★</p>
+        <p>=<span id="kazu2"></span></p>
+      </div>
+      <div id="tama2">
+        <p class="sample">☆</p>
+        <p>= 20秒</p>
+        <p class="sample">★</p>
+        <p>= 120秒</p>
+        <p class="sample">☆</p>
+        <p>=<span id="kazus"></span></p>
+        <p class="sample">★</p>
+        <p>=<span id="kazus2"></span></p>
+      </div>
+      <div id="b"></div>
+      <!-- <div id="c"></div> -->
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>
